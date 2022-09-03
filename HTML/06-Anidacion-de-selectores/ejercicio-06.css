@@ -1,0 +1,24 @@
+button{
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+button::before{
+    content:"Pasa por encima"
+}
+
+button:hover{
+    color: white;
+    background-color: green;       
+}
+
+
+/* Cuando hago click sobre el boton cambia el texto a Hecho */
+button:focus::before{
+    content: "¡Hecho!";    
+}
+
+
+
+
+
