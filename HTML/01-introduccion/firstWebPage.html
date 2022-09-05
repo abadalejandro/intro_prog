@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: 0;        
+      }
+
+
+
+      .grid-container{
+        /* height: 100vh; */
+        display:grid;
+        grid-template-areas: 'header header header header header header'
+                             'nav    nav    nav    nav nav nav'
+                             'section section section section section aside'
+                             'footer footer footer footer footer footer';
+      }
+      .grid-header{ 
+        height: 20vh;       
+        grid-area:header;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+        color: white;
+        background-color: black;
+      }
+      .grid-nav{
+        height: 10vh;  
+        grid-area:nav;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        /* border: 1px solid orange; */
+        color: white;
+        background-color: orange;
+      }
+      .grid-section{
+        height: 60vh;      
+        grid-area:section;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid green; */
+        color: white;
+        background-color: green;
+      }
+      .grid-aside{
+        height: 60vh;       
+        grid-area:aside;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid fuchsia; */
+        color: white;
+        background-color: fuchsia;
+      }
+      .grid-footer{
+        height: 10vh;       
+        grid-area:footer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid blue; */
+        color: white;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="grid-container">
+      <header class="grid-header">MyPage</header>
+      <nav class="grid-nav">Menu</nav>
+      <section class="grid-section">Section1</section>
+      <aside class="grid-aside">Right Side</aside>
+      <footer class="grid-footer">Footer</footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+* {
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 1px solid black;
+    margin: 1.5rem;
+}
+
+.input, .input-search {  
+    margin: .5rem; /* width: 100vw; */
+    padding: 5px 10px;   
+    
+}
+
+.input[type="password"]{
+    color:red;
+    /* border:none; */
+}
+
+
