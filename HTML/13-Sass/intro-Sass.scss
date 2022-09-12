@@ -1,0 +1,22 @@
+// from terminal
+// sass --watch intro-Sass.scss intro-Sass.css
+
+// Componentes
+@use "sass/componentes";
+
+// Mixins
+@use "sass/mixins";
+
+// Estilos
+@use "sass/estilos";
+
+
+// Others
+@use "sass/builtin";
+
+// Paginas
+// pagina principal
+// pagina de contacto
+// pagina de aviso legal
+
+
